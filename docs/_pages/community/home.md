@@ -14,3 +14,7 @@ gallery1:
 ---
 
 {% include gallery id="gallery1" %}
+
+- [Vision](vision.md)
+- [Nwx Community](nwx_community.md)
+- [Nwx Ecosystem](nwx_ecosystem.md)

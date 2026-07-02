@@ -37,10 +37,11 @@ gallery2:
 This website is under heavy construction at the moment.
 {: .notice--warning}
 
-Choose your experience. Don't know which experience you want? Visit our tutorial
-on [NWChemEx Community Roles](/tutorials/community_overview).
+Choose your experience. Don't know which experience you want? Start with
+"Community" or see our tutorial on [NWChemEx Community Roles](/tutorials/community_overview).
 
 {% include gallery id="gallery1" %}
 
 {% include gallery id="gallery2" %}
 
+- [Bibliography](bibliography/bibliography.md)

@@ -2,6 +2,7 @@
 Gemfile.lock
 docs/vendor
 docs/_site
+.bundle
 
 #VSCode Settings
 .vscode/

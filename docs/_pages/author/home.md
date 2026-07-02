@@ -4,9 +4,20 @@ layout: splash
 permalink: /author/
 ---
 
-See [author documentation](https://nwchemex.github.io/.github/) for the full
-author documentation. The topics here are meant to provide high-level synopses
-of the most important points. In all cases the full author documentation is the
-authority.
+# Information for NWChemEx Authors
 
-TODO: content
+NWChemEx authors are developers who contribute source code to repositories
+owned and managed by the NWChemEx GitHub organization.
+
+# Standards and Policies
+
+- [Conventions](conventions/index.md)
+
+# Information on Architecture and Design
+
+- [Architecture](architecture/index.md)
+- [Devops](devops/index.md)
+
+# Maintaining the Stack
+
+- [Continuous Deployment](continuous_deployment/index.md)
