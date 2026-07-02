@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Community Guidelines for Pull Requests"
 layout: single
-permalink: /developer/community/pull_requests/
+permalink: /developer/resources/github/pull_requests/
 toc: true
 toc_sticky: true
 ---
@@ -352,3 +352,7 @@ CI. For example:
   thinking the author needs to confirm they've added documentation etc. before
   the PR can be made ready to go).
 - Ideally we should automate as much of the required checklist as possible.
+
+# Resources
+
+- GitHub's [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)

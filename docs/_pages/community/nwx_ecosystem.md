@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Ecosystem"
 layout: single
-permalink: /developer/design/community/nwx_ecosystem/
+permalink: /community/nwx_ecosystem/
 toc: true
 toc_sticky: true
 ---

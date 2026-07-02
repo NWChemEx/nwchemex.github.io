@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Community Guidelines for Issues"
 layout: single
-permalink: /developer/community/issues/
+permalink: /community/issues/
 toc: true
 toc_sticky: true
 ---

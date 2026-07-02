@@ -1,7 +1,7 @@
 ---
 title: "pre-commmit Configuration for NWChemEx"
 layout: single
-permalink: /developer/conventions/pre_commit/
+permalink: /author/conventions/pre_commit/
 toc: true
 toc_sticky: true
 ---

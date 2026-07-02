@@ -14,4 +14,4 @@ the NWChemEx project.
 
 - [Git Tutorial](git_tutorial.md)
 - [Issue](issue.md)
-- [Pull Request](pull_request.md)
+- [Pull Request Guidelines](pull_requests.md)

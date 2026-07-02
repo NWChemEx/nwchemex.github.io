@@ -1,7 +1,7 @@
 ---
 title: "Conventions for Writing reST Documentation"
 layout: single
-permalink: /developer/conventions/rst_conventions/
+permalink: /author/conventions/rst_conventions/
 toc: true
 toc_sticky: true
 ---

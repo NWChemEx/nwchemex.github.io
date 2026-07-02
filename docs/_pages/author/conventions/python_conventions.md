@@ -1,7 +1,7 @@
 ---
 title: "Python Coding Conventions"
 layout: single
-permalink: /developer/conventions/python_conventions/
+permalink: /author/conventions/python_conventions/
 toc: true
 toc_sticky: true
 ---

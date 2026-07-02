@@ -1,7 +1,7 @@
 ---
 title: "How NWX's Continuous Integration (CI) Works"
 layout: single
-permalink: /developer/continuous_deployment/ci_maintainer_notes/
+permalink: /author/continuous_deployment/ci_maintainer_notes/
 toc: true
 toc_sticky: true
 ---

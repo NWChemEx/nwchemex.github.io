@@ -1,7 +1,7 @@
 ---
 title: "Documentation Deployment"
 layout: single
-permalink: /developer/continuous_deployment/documentation/
+permalink: /author/continuous_deployment/documentation/
 toc: true
 toc_sticky: true
 ---

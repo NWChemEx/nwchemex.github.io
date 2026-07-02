@@ -1,7 +1,7 @@
 ---
 title: "Build System Design"
 layout: single
-permalink: /developer/design/devops/build_system/
+permalink: /author/devops/build_system/
 toc: true
 toc_sticky: true
 ---

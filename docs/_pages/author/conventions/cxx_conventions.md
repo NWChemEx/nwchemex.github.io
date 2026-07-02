@@ -1,7 +1,7 @@
 ---
 title: "C++ Coding Conventions"
 layout: single
-permalink: /developer/conventions/cxx_conventions/
+permalink: /author/conventions/cxx_conventions/
 toc: true
 toc_sticky: true
 ---

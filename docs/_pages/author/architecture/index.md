@@ -13,4 +13,4 @@ stack.
 
 - [NWChemEx Organization](nwchemex_organization.md)
 - [SimDE](simde.md)
-- [FAQs](faqs.md)
+- [FAQs](faqs/index.md)

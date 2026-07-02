@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Community"
 layout: single
-permalink: /developer/design/community/nwx_community/
+permalink: /community/nwx_community/
 toc: true
 toc_sticky: true
 ---

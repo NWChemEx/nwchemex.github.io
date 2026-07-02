@@ -1,7 +1,7 @@
 ---
 title: "User Interface Design"
 layout: single
-permalink: /developer/design/ui_design/
+permalink: /author/ui_design/
 toc: true
 toc_sticky: true
 ---

@@ -17,6 +17,7 @@ owned and managed by the NWChemEx GitHub organization.
 
 - [Architecture](architecture/index.md)
 - [Devops](devops/index.md)
+- [UI Design](ui_design.md)
 
 # Maintaining the Stack
 

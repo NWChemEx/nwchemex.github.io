@@ -1,7 +1,7 @@
 ---
 title: "Using Doxygen in the NWChemEx Project"
 layout: single
-permalink: /developer/conventions/doxygen_conventions/
+permalink: /author/conventions/doxygen_conventions/
 toc: true
 toc_sticky: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Architecture FAQs"
 layout: single
-permalink: /author/architecture/faqs
+permalink: /author/architecture/faqs/
 ---
 
 - [Why so many repos?](one_repo_vs_many.md)

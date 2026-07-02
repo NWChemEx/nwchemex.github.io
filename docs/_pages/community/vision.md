@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Vision"
 layout: single
-permalink: /developer/design/community/vision/
+permalink: /community/vision/
 toc: true
 toc_sticky: true
 ---

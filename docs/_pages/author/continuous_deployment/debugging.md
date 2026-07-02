@@ -1,7 +1,7 @@
 ---
 title: "How to Debug CI Issues Locally"
 layout: single
-permalink: /developer/continuous_deployment/debugging/
+permalink: /author/continuous_deployment/debugging/
 toc: true
 toc_sticky: true
 ---

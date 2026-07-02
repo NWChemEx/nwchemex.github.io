@@ -1,7 +1,7 @@
 ---
 title: "NWChemEx Community FAQs"
 layout: single
-permalink: /developer/community/faqs/
+permalink: /community/faqs/
 toc: true
 toc_sticky: true
 ---

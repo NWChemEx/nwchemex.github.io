@@ -16,5 +16,7 @@ gallery1:
 {% include gallery id="gallery1" %}
 
 - [Vision](vision.md)
-- [Nwx Community](nwx_community.md)
-- [Nwx Ecosystem](nwx_ecosystem.md)
+- [NWX Community](nwx_community.md)
+- [NWX Ecosystem](nwx_ecosystem.md)
+- [Opening an Issue](issues.md)
+- [FAQs](faqs.md)

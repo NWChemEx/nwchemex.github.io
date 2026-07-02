@@ -1,7 +1,7 @@
 ---
 title: "File Structure for NWChemEx Repositories"
 layout: single
-permalink: /developer/conventions/file_structure/
+permalink: /author/conventions/file_structure/
 toc: true
 toc_sticky: true
 ---
