@@ -1,12 +1,13 @@
 ---
-title: "NWChemEx Vision"
+title: "NWChemEx Project Vision"
 layout: single
 permalink: /community/vision/
 toc: true
 toc_sticky: true
 ---
 
-# NWChemEx Vision
+> **TODO:**
+> Pictures make this not a wall of text.
 
 NWChemEx, the software package, strives to be the *de facto* choice for running
 high-performance quantum chemistry calculations on platforms ranging from

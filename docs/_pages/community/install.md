@@ -5,6 +5,10 @@ permalink: /community/install/
 toc: true
 ---
 
+> **TODO:**
+> These instructions are ancient and need updated after the build system
+> overhaul.
+
 NWChemEx is a modular software package that can be extended with plugins. All
 of these tutorials focus on building the core NWChemEx package 
 [repository](https://github.com/NWChemEx/NWChemEx). Such an install will give

@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# NWChemEx Community FAQs
-
 ## When do I open an issue vs. a draft pull request (PR)?
 
 TL;DR, if you're not sure, open an issue first.

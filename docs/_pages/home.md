@@ -37,8 +37,14 @@ gallery2:
 This website is under heavy construction at the moment.
 {: .notice--warning}
 
-Choose your experience. Don't know which experience you want? Start with
-"Community" or see our tutorial on [NWChemEx Community Roles](/tutorials/community_overview).
+New to NWChemEx? Check out our [about page](/community/about/) for a quick overview of the
+project and what we are trying to accomplish. Otherwise you can browse
+information by use case:
+
+- **Community members** run calculations.
+- **Developers** develop modular software compatible with NWChemEx.
+- **Authors** develop infrastructure and plugins for NWChemEx.
+
 
 {% include gallery id="gallery1" %}
 

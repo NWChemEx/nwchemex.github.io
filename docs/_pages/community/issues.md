@@ -1,12 +1,10 @@
 ---
-title: "NWChemEx Community Guidelines for Issues"
+title: "Why we elected to use GitHub Issues for feedback."
 layout: single
 permalink: /community/issues/
 toc: true
 toc_sticky: true
 ---
-
-# NWChemEx Community Guidelines for Issues
 
 The TL;DR is that the NWChemEx community has elected to use GitHub for hosting
 the source code of NWChemEX. Issues are well integrated into the GitHub
@@ -15,7 +13,7 @@ user feedback. User feedback includes, but is not limited to: feature requests,
 performance concerns, questions related to the code, and suggestions.
 
 This page is an academic look at issues. For tutorials on how to use issues,
-from the perspective of the NWChemEx organization, see nwx_github_issues.
+from the perspective of the NWChemEx organization, see [Using GitHub Issues with NWChemEx](/developer/resources/github/issue).
 
 ## What are (GitHub) Issues?
 
@@ -27,7 +25,7 @@ developer, you can then use Issues as a task list. If you're a user, you can
 use Issues to give feedback to the code developers.
 
 For a tutorial on using GitHub issues within the NWChemEx organization
-see nwx_github_issues.
+see [Using GitHub Issues with NWChemEx](/developer/resources/github/issue).
 
 ## Why Do We Need Issues?
 
