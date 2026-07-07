@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Building NWX with VSCode
-
 Once you've minimally added the C++ and CMake extensions it's time to start
 setting up your build process. For the purposes of this tutorial we assume you
 are using a toolchain file with all of your CMake options. For sake of arguement

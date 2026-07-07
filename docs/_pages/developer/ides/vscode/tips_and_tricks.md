@@ -6,6 +6,5 @@ toc: true
 toc_sticky: true
 ---
 
-# Tips and Tricks for VSCode
-
-TODO: Add tips and tricks as they come up!!!
+> **TODO:**
+> Add tips and tricks as they come up!!!

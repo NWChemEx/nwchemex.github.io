@@ -1,12 +1,10 @@
 ---
-title: "Documenting NWChemEx"
+title: "Documenting the NWChemEx Ecosystem" 
 layout: single
 permalink: /developer/documenting/
 toc: true
 toc_sticky: true
 ---
-
-# Documenting NWChemEx
 
 The topics below are tutorials and best practices to follow when documenting
 NWChemEx. While writing documentation please be familiar with the

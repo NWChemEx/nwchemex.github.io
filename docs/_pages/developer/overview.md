@@ -1,6 +1,6 @@
---
+---
 title: "Overview of NWChemEx Development"
-layout: splash
+layout: single
 permalink: /developer/overview/
 ---
 
@@ -87,36 +87,7 @@ The NWChemEx ecosystem is comprised of plugins and
 [SimDE](https://github.com/NWChemEx/SimDE). Plugins are libraries
 of modules which can be loaded dynamically and SimDE is the software development
 kit that contains the infrastructure for loading plugins as well as the 
-fundamental data structures and APIs needed to interface with plugins.  In 
-practice, this means "streamlined" NWChemEx calculations follow a pattern like:
-
-```python
-import simde
-import name_of_plugin
-
-# mm is an object capable of loading plugins
-mm = simde.pluginplay.ModuleManager()
-
-# Load the plugin using mm
-name_of_plugin.load_modules(mm)
-
-# Use mm to run your calculation
-```
-
-We say streamlined because most users won't run NWChemEx this way, rather they
-will do:
-
-```python
-import nwchemex as nwx
-
-mm = nwx.load_modules()
-
-# Usse mm to run your calculation
-```
-
-While this may be simpler from a code perspective this loads most of the
-plugins in the NWChemEx ecosystem and is significantly heavier in terms of
-dependencies.
+fundamental data structures and APIs needed to interface with plugins.  
 
 ## Next Steps
 
@@ -124,9 +95,3 @@ To start developing you will need to install SimDE and/or NWChemEx. Strictly
 speaking plugins can be created with SimDE alone; however, many developers find
 it easier to develop plugins if they can test them using other plugins in the
 ecosystem. See [here](/community/install/) for build instructions.
-
-If you want to learn how to develop a plugin see 
-[this](/developer/your_first_plugin/) tutorial.
-
-If you are contributing modules to an already existing plugin see
-[this](/developer/your_first_module/) tutorial.

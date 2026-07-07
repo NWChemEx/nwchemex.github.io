@@ -1,7 +1,8 @@
 ---
 title: "About the NWChemEx Project"
-layout: splash
-permalink: /about/
+layout: single
+permalink: /community/about/
+toc: true
 ---
 
 > **TODO:**

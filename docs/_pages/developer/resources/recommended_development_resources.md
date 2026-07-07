@@ -1,5 +1,5 @@
 ---
-title: "Recommended Development Resources"
+title: "Miscellaneous Resources"
 layout: single
 permalink: /developer/resources/recommended_development_resources/
 toc: true

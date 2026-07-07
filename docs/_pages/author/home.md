@@ -12,6 +12,7 @@ owned and managed by the NWChemEx GitHub organization.
 # Standards and Policies
 
 - [Conventions](conventions/index.md)
+- [Documenting](documenting/index.md)
 
 # Information on Architecture and Design
 

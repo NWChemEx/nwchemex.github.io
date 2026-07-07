@@ -1,12 +1,10 @@
 ---
-title: "Using IDEs to Develop NWX"
+title: "Using IDEs to develop NWChemEx"
 layout: single
 permalink: /developer/coding/ides/
 toc: true
 toc_sticky: true
 ---
-
-# Using IDEs to Develop NWX
 
 While you can develop code for NWChemEx purely from the terminal you'll probably
 be more productive if you use an integrated development environment (IDE). IDEs

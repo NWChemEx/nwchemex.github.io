@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Setting Up VSCode on MacOS
-
 These instructions were created on 9/16/2025 for macOS Sonoma (Version 14.6.1)
 targeting VSCode Version 1.93.1.
 

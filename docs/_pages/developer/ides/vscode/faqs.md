@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# FAQs
-
 This subsection covers frequently asked questions regarding VSCode and
 developing NWX with VSCode.
 

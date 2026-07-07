@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Developing NWX with VSCode
-
 Once you've got the build working you're ready to start developing. The
 following subsections provide some basic advice on how to go about doing
 common development tasks.

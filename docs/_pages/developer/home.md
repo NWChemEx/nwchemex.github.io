@@ -21,9 +21,12 @@ most useful if you are:
 This documentation is meant to be a living document so please feel free to
 contribute.
 
+> **TODO:**
+> Tutorials on writing plugins/modules
+
 - [Overview](overview.md)
-- [Documenting](documenting/index.md)
-- [Coding](coding/index.md)
-- [Testing](testing/index.md)
+- [Setting up a developer environment](dev_env_setup.md)
+- [Typical development workflow](dev_workflow.md)
+- [Integrated Development Environments (IDEs)](/ides/index.md)
 - [Resources](resources/index.md)
 
