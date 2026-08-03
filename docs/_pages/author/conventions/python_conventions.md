@@ -9,6 +9,8 @@ toc_sticky: true
 This page tentatively introduces the NWX team's coding conventions for writing
 Python.
 
+> **TODO**: Is this still accurate?
+
 ## Code Formatting
 
 When possible, `yapf` ([PyPI link](https://pypi.org/project/yapf/)) will

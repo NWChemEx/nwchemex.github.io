@@ -4,8 +4,6 @@ layout: splash
 permalink: /author/
 ---
 
-# Information for NWChemEx Authors
-
 NWChemEx authors are developers who contribute source code to repositories
 owned and managed by the NWChemEx GitHub organization.
 

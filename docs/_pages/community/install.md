@@ -63,3 +63,23 @@ python -m venv .venv
 source .venv/bin/activate
 pip install .
 ```
+
+## Step3: (Alternative) Install with CMake
+
+The pip install is a thin wrapper over a CMake build. If you'd prefer a more
+"standard" C++ experience you can also build NWChemEx with CMake via:
+
+```terminal
+cd NWChemEx
+cmake -B build -H. -GNinja -DCMAKE_INSTALL_PREFIX=./install 
+cmake --build build --parallel
+```
+Some notes:
+- This will install NWChemEx into a directory `install/` located in the 
+  `NWChemEx/` directory. Change the location if you would prefer it be installed
+  elsewhere. We strongly suggest specifying a local path and NOT letting CMake
+  install it system-wide (the default if `CMAKE_INSTALL_PREFIX` is not set).
+- `-GNinja` tells CMake to use the Ninja build system, which is much faster than
+  the default. It does however, require Ninja to be pre-installed (See
+  [Installing NWChemEx dependencies](/community/dependencies) for instructions).
+  You can omit the `-GNinja` flag if you do not want to install Ninja.

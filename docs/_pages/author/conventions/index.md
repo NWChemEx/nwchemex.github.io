@@ -16,5 +16,4 @@ authors.
 - [Python Conventions](python_conventions.md)
 - [Doxygen Conventions](doxygen_conventions.md)
 - [reST Conventions](rst_conventions.md)
-- [Pre Commit](pre_commit.md)
 - [File Structure](file_structure.md)

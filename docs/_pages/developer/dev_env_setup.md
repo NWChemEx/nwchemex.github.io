@@ -70,14 +70,23 @@ multiple `FETCHCONTENT_SOURCE_DIR_XXX` values, one for each repo.
 
 # Creating an editable install
 
-```terminal
-pip install $(python3 -c "import tomllib; print(' '.join(r for r in tomllib.load(open('pyproject.toml','rb'))['build-system']['requires'] if 'nwxcmake' not in r))")
-```
+1. Build NWChemEx
+2. Create an editable install 
 
 ```terminal
-pip -e .[dev]
+ pip install -e ".[dev]" \
+              --config-settings=cmake.define.CMAKE_TOOLCHAIN_FILE="/path/to/toolchain"
 ```
 
+To run the C++ tests:
+```terminal
+ctest --test-dir build
+```
+
+To run the Python tests:
+```terminal
+python -m pytest
+```
 
 # Next steps
 

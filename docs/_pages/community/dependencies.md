@@ -14,6 +14,7 @@ NWChemEx can not build the following dependencies:
 - BLAS/LAPACK
 - Boost
 - Python
+- Ninja
 
 This page will provide you strategies for obtaining them.
 
@@ -43,6 +44,7 @@ With Homebrew the dependencies and corresponding terminal commands are:
 - CMake `brew install cmake`.
 - MPI `brew install mpich`.
 - Boost `brew install boost`.
+- Ninja `brew install ninja`.
 
 > **Note:**
 > To find the Python developer libraries run ``python3-config --include``.

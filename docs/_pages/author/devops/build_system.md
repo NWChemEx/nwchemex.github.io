@@ -51,6 +51,17 @@ by the NWChemEx ecosystem.
 5. It must be possible to add plugins at runtime to the result of the NWChemEx
    package without needing to rebuild it.
 
+6. Generators to populate a new repo are okay, but once a repo exists its build
+   files should be version controlled.
+
+   - Many tools require these files to be part of the history, which they will
+     not be if they need to be generated after a repo is cloned (if
+     on-the-fly generation is being relied on to ensure up-to-date files are
+     used in each build). The other alternative is CI/CD actions to synchronize
+     the files, but that leads to version control conflicts and is a devops
+     pain.
+
+
 ## Design Decisions
 
 ### C++ is built with CMake
@@ -87,6 +98,10 @@ Pyproject.toml is also highly configurable and can be used to build Python code
 for a wide variety of platforms and interpreters. NWChemEx will use 
 pyproject.toml as its Python build system. This addresses the remainder of
 consideration 2.
+
+> **Note:** PEP 517/518 require toml files to be self-contained so there is no
+> way to factor out common boilerplate (e.g., license, build-backend, etc.)
+> without resorting to a code generator. 
 
 ## Build Infrastructure Architecture
 
