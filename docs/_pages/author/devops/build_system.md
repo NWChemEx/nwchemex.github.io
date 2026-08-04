@@ -92,11 +92,11 @@ our current solution for consideration 1.
 
 ### Python is built with pyproject.toml
 
-Pyproject.toml is the standard for building Python code. It is widely used
+`pyproject.toml` is the standard for building Python code. It is widely used
 in the Python community and is well supported by IDEs and other tools. 
-Pyproject.toml is also highly configurable and can be used to build Python code 
-for a wide variety of platforms and interpreters. NWChemEx will use 
-pyproject.toml as its Python build system. This addresses the remainder of
+`pyproject.toml` is also highly configurable and can be used to build Python 
+code  for a wide variety of platforms and interpreters. NWChemEx will use 
+`pyproject.toml` as its Python build system. This addresses the remainder of
 consideration 2.
 
 > **Note:** PEP 517/518 require toml files to be self-contained so there is no
@@ -109,7 +109,7 @@ consideration 2.
 
 NWXCMake Repo key pieces:
 
-- "Python module" and "pyproject.toml" make the NWXCMake repo pip installable. 
+- "Python module" and `pyproject.toml` make the NWXCMake repo pip installable. 
   This makes it easier to bootstrap the build system.
 - "Find Dependencies" is a collection of CMake modules that can find and
   configure dependencies used throughout the ecosystem. There is also a driver
@@ -119,16 +119,25 @@ NWXCMake Repo key pieces:
 
 Key pieces in other repos:
 
-- "cmake/get_nwx_cmake.cmake" is a boilerplate CMake module that discovers or
+- `cmake/get_nwx_cmake.cmake` is a boilerplate CMake module that discovers or
   obtains the CMake modules in NWXCMake.
-- "CMakeLists.txt" includes some boilerplate for pulling in NWXCMake, but
+- `CMakeLists.txt` includes some boilerplate for pulling in NWXCMake, but
   otherwise is fairly project-specific in that it establishes dependencies,
   build options, available test suites, etc.
-- "pyproject.toml" similar to "CMakeLists.txt", but for Python.
+- `pyproject.toml` similar to `CMakeLists.txt`, but for Python.
 
 Compared to having each repo implement and maintain its own build system,
 this architecture is quite light. Unfortunately, the three key files that go
 in each repo are still boilerplate heavy
+
+## Understanding the User Build
+
+Users in this sense just want to run electronic structure calculations. They
+should just be able to run:
+
+```terminal
+pip install nwchemex
+```
 
 ## Understanding the Development Cycle
 

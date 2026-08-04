@@ -1,7 +1,7 @@
 ---
 title: "Writing Integration Tests for NWChemEx"
 layout: single
-permalink: /developer/testing/integration/
+permalink: /author/testing/integration/
 toc: true
 toc_sticky: true
 ---

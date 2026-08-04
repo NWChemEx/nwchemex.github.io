@@ -1,7 +1,7 @@
 ---
 title: "Contributing to NWChemEx Documentation"
 layout: single
-permalink: /developer/documenting/contributing_to_documentation/
+permalink: /author/documenting/contributing_to_documentation/
 toc: true
 toc_sticky: true
 ---

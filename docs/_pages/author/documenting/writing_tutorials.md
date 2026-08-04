@@ -1,7 +1,7 @@
 ---
 title: "Writing Tutorials"
 layout: single
-permalink: /developer/documenting/writing_tutorials/
+permalink: /author/documenting/writing_tutorials/
 toc: true
 toc_sticky: true
 ---

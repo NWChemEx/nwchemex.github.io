@@ -1,7 +1,7 @@
 ---
 title: "Testing NWChemEx"
 layout: single
-permalink: /developer/testing/
+permalink: /author/testing/
 toc: true
 toc_sticky: true
 ---

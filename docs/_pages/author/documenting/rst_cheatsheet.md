@@ -1,7 +1,7 @@
 ---
 title: "reST Cheat Sheet"
 layout: single
-permalink: /developer/documenting/rst_cheatsheet/
+permalink: /author/documenting/rst_cheatsheet/
 toc: true
 toc_sticky: true
 ---

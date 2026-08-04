@@ -1,7 +1,7 @@
 ---
 title: "Writing Performance Tests for NWChemEx"
 layout: single
-permalink: /developer/testing/performance/
+permalink: /author/testing/performance/
 toc: true
 toc_sticky: true
 ---

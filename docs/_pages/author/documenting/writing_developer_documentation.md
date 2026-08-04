@@ -1,7 +1,7 @@
 ---
 title: "Writing Developer Documentation"
 layout: single
-permalink: /developer/documenting/writing_developer_documentation/
+permalink: /author/documenting/writing_developer_documentation/
 toc: true
 toc_sticky: true
 ---

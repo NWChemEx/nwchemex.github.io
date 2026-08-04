@@ -1,7 +1,7 @@
 ---
 title: "Writing Design Documentation"
 layout: single
-permalink: /developer/documenting/writing_design_documentation/
+permalink: /author/documenting/writing_design_documentation/
 toc: true
 toc_sticky: true
 ---
@@ -16,7 +16,9 @@ to establish what the NWChemEx team is looking for in design documentation.
 ## What is Design Documentation?
 
 [Wikipedia](https://en.wikipedia.org/wiki/Software_design_description)
-defines design documentation as:
+defines design documentation as: "a representation of a software design that is 
+to be used for recording design information, addressing various design concerns, 
+and communicating that information to the design’s stakeholders."
 
 ## Why Do We Need Design Documentation?
 

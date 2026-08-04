@@ -1,7 +1,7 @@
 ---
 title: "Writing Unit Tests for NWChemEx"
 layout: single
-permalink: /developer/testing/unit/
+permalink: /author/testing/unit/
 toc: true
 toc_sticky: true
 ---
