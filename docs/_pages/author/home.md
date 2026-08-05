@@ -20,4 +20,4 @@ owned and managed by the NWChemEx GitHub organization.
 
 # Maintaining the Stack
 
-- [Continuous Deployment](continuous_deployment/index.md)
+- [Continuous Deployment](ci_cd/index.md)
