@@ -1,0 +1,217 @@
+---
+title: "reST Cheat Sheet"
+layout: single
+permalink: /author/documenting/rst_cheatsheet/
+toc: true
+toc_sticky: true
+---
+
+# reST Cheat Sheet
+
+The purpose of this page is to provide a convenient resource for quickly
+becoming familiar with ReStructured text (reST) as commonly needed in
+documenting NWChemEx.
+
+## Terminology
+
+reST is an extensible markup language, which means it's a bit more complicated
+than say Markdown. This complication comes from some additional concepts.
+
+- roles: These are the qualifiers on inline text
+
+  - *e.g.*, `:math:\alpha`
+
+- directives: These markup blocks of text
+
+  - *e.g.*, `.. math::`
+
+## Basic Text Formatting
+
+- Italics: `*text to italicize`
+
+  - Result: *text to italicize*
+
+- Bold: `**text to bold**`
+
+  - Result: **text to bold**
+
+## Math
+
+To write inline math use the `:math:` role:
+
+```rest
+The area, :math:`a`, of a circle of radius :math:`r` is :math:`a=\pi r^2`
+```
+
+Result:
+
+   The area, `a`, of a circle of radius `r` is `a=\pi r^2`
+
+To make a block of math use the `.. math::` directive:
+
+```rest
+.. math::
+
+   a = \pi r^2
+```
+
+Which renders as:
+
+$$
+a = \pi r^2
+$$
+
+Equations in a math block can be aligned in the usual LaTeX way (*i.e.*, with
+`&`):
+
+```rest
+.. math::
+
+   \widehat{H}\Psi &= E\Psi \\
+   \widehat{H}     &= -\frac{1}{2}\sum_{i} \bigtriangledown^2_i -
+                      \sum_i \sum_A \frac{Z_A}{\mathbf{r}_{iA}} +
+                      \sum_{i > j} \frac{1}{\mathbf{r}_{ij}} +
+                      \sum_A \sum_B \frac{Z_AZ_B}{\mathbf{R}_{AB}}
+```
+
+which shows up as:
+
+$$
+\widehat{H}\Psi &= E\Psi \\
+\widehat{H}     &= -\frac{1}{2}\sum_{i} \bigtriangledown^2_i -
+                   \sum_i \sum_A \frac{Z_A}{\mathbf{r}_{iA}} +
+                   \sum_{i > j} \frac{1}{\mathbf{r}_{ij}} +
+                   \sum_A \sum_B \frac{Z_AZ_B}{\mathbf{R}_{AB}}
+$$
+
+To simplify writing complicated math equations you can define LaTeX commands in
+a math directive:
+
+```rest
+.. math::
+
+   \newcommand{\bra}[1]{\left\langle{#1}\right|}
+   \newcommand{\ket}[1]{\left|{#1}\right\rangle}
+
+   \bra{\psi} = \left(\ket{\psi}\right)^\dagger
+```
+
+which renders as:
+
+$$
+\newcommand{\bra}[1]{\left\langle{#1}\right|}
+\newcommand{\ket}[1]{\left|{#1}\right\rangle}
+
+\bra{\psi} = \left(\ket{\psi}\right)^\dagger
+$$
+
+Commands defind in a math directive are good for the page, so:
+
+```rest
+.. math::
+
+   \ket{i} = \sum_{\mu}C_{\mu i}\ket{\mu}
+```
+
+renders as:
+
+$$
+\ket{i} = \sum_{\mu}C_{\mu i}\ket{\mu}
+$$
+
+without needing to redefine the `\ket` command.
+
+To make aliases for inline math the best solution I have found is to do:
+
+```rest
+.. |fock_matrix| replace:: :math:`f_{\mu\nu}`
+
+The :math:`\mu\nu`-th element of the fock matrix is |fock_matrix|.
+```
+
+Which renders as:
+
+.. |fock_matrix| replace:: `f_{\mu\nu}`
+
+The `\mu\nu`-th element of the fock matrix is |fock_matrix|.
+
+## Code Blocks
+
+Code blocks are done with the `.. code-block::` directive. To get syntax
+highlighting you can specify the language after the `::`. For example:
+
+```rest
+.. code-block:: python
+
+   import os
+   print("The current directory is: " + os.getcwd())
+```
+
+which renders as:
+
+```python
+import os
+print("The current directory is: " + os.getcwd())
+```
+
+## Figures
+
+To add a figure to a page:
+
+```rest
+.. _label_for_figure:
+
+.. figure:: relative/path/to/image.png
+   :align: center
+
+   The figure's caption goes here.
+```
+
+You can refer to the figure with ```label_for_figure```.  Note the
+underscore on the declaration of the label, which is not present when referring
+to the label.
+
+> **Note:**
+> The ``:numref:`` role will automatically include "Fig." in addition to the
+> number.
+
+> **Note:**
+> If when you try to build the documentation you get a warning like:
+>
+> .. code-block:: text
+>
+>    /path/to/file.rst:line_number: WARNING: numfig is disabled. :numref: is ignored
+>
+> then you need to add ``numfig = True`` to the ``conf.py`` file.
+
+## FAQs
+
+#. How do I have URLs with the same generic link text?
+
+For example the following reST will give rise to
+the warning `WARNING: Duplicate explicit target name: "here"`:
+
+```rest
+See `here <https://github.com/NWChemEx/DeveloperTools>`_ or
+`here <https://github.com/NWChemEx/NWChemEX>`_ for a really
+cool repo.
+```
+
+This problem is caused by the fact that Sphinx automatically creates a
+target for your link based on the link text. To avoid this problem you
+can make the link have an anonymous target. This is done by using two
+underscores at the end like:
+
+```rest
+See `here <https://github.com/NWChemEx/DeveloperTools>`__ or
+`here <https://github.com/NWChemEx/NWChemEX>`__ for a really
+cool repo.
+```
+
+#. How do I insert line breaks into long URLs to satisfy the 80 character
+   limit?
+
+At this point I can not find a reST-based solution for this problem; however,
+a widely applicable solution to this problem is to use websites like
+[TinyURL](https://tinyurl.com/app/) or `Bitly <https://bitly.com/>__` to
+shorten the URL.
