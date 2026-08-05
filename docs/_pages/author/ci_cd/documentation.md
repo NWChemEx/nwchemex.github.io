@@ -49,8 +49,9 @@ written most easily in Sphinx's flavor of reStructuredText. This also has the
 benefit of resulting in far prettier documentation than Doxygen's equivalent.
 This documentation should be kept with the repository it pertains to (if it
 applies project-wide it should live in the DeveloperTools repo) in the repo's
-`docs` directory. This directory should have a typical Sphinx setup::
+`docs` directory. This directory should have a typical Sphinx setup:
 
+```
    docs/
    ├-source/
    | ├-section1/
@@ -60,6 +61,7 @@ applies project-wide it should live in the DeveloperTools repo) in the repo's
    | ├-conf.py
    | └-index.rst
    └-Makefile
+```
 
 If the repository has C++ API documentation it will be generated at
 `docs/build/html/x_cxx_api/index.html` where `x` is the project name

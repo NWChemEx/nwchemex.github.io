@@ -45,7 +45,7 @@ The area, :math:`a`, of a circle of radius :math:`r` is :math:`a=\pi r^2`
 
 Result:
 
-   The area, `a`, of a circle of radius `r` is `a=\pi r^2`
+   The area, $$a$$, of a circle of radius $$r$$ is $$a=\pi r^2$$
 
 To make a block of math use the `.. math::` directive:
 
@@ -131,9 +131,8 @@ The :math:`\mu\nu`-th element of the fock matrix is |fock_matrix|.
 
 Which renders as:
 
-.. |fock_matrix| replace:: `f_{\mu\nu}`
+The $$\mu\nu$$-th element of the fock matrix is $$f_{\mu\nu}$$.
 
-The `\mu\nu`-th element of the fock matrix is |fock_matrix|.
 
 ## Code Blocks
 
@@ -186,7 +185,7 @@ to the label.
 
 ## FAQs
 
-#. How do I have URLs with the same generic link text?
+- How do I have URLs with the same generic link text?
 
 For example the following reST will give rise to
 the warning `WARNING: Duplicate explicit target name: "here"`:
@@ -208,8 +207,8 @@ See `here <https://github.com/NWChemEx/DeveloperTools>`__ or
 cool repo.
 ```
 
-#. How do I insert line breaks into long URLs to satisfy the 80 character
-   limit?
+- How do I insert line breaks into long URLs to satisfy the 80 character
+  limit?
 
 At this point I can not find a reST-based solution for this problem; however,
 a widely applicable solution to this problem is to use websites like

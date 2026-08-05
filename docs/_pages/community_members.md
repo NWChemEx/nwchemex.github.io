@@ -13,7 +13,8 @@ ryan_m_richard:
     btn_class: "btn--primary"
 ---
 
-The NWChemEx development community is made up of two types of members: authors and developers.
+The NWChemEx development community is made up of two types of members: authors
+and developers.
 
 # Developers
 If you would like to be included in the developer section please open a pull

@@ -29,4 +29,5 @@ and functions, similar to the expectation that C++ code be documented
 sufficiently through Doxygen documentation blocks.
 
 > **Note:**
-> For IDE tools to help with these conventions, see :ref:`nwx-ide-development`.
+> For IDE tools to help with these conventions, see
+[here](/developer/ides/vscode/developing/).

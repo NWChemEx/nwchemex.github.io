@@ -59,11 +59,11 @@ This section lists considerations for authors and/or reviewers of PRs.
 Following semantic versioning, we can think of each PR as addressing one of
 three use cases:
 
-#. API breaking changes
+1. API breaking changes
 
    - Any change to a public-facing API which breaks previously working code
 
-#. New features
+2. New features
 
    - Introduces new code without breaking the API
    - New alternative APIs
@@ -71,7 +71,7 @@ three use cases:
    - Quality of life improvements (e.g., extensive optimization)
    - Entirely new documentation sections
 
-#. Patches
+3. Patches
 
    - Largely modifies existing code
    - Bug fixes, typos, documentation tweaks
@@ -85,18 +85,18 @@ ignored.
 
 ### General Considerations
 
-#. Making a PR should be easy.
+1. Making a PR should be easy.
 
    - If it's too hard to make a PR people won't do it.
    - Setting the bar too high discourages new contributors.
 
-#. It should be possible to open the PR early.
+2. It should be possible to open the PR early.
 
    - Channel for discussion between reviewers and the PR author.
    - Gets work on radar of reviewers and other developers.
    - Time to hash out what is and is not in scope before time is wasted.
 
-#. The PR's lifetime should be short.
+3. The PR's lifetime should be short.
 
    - Shoot for merging in less than two weeks.
 
@@ -115,7 +115,7 @@ ignored.
    - Merge function by function if necessary.
    - See using_issues_to_track_progress for tracking progress.
 
-#. Code submitted as PRs should adhere to the organization's standards.
+4. Code submitted as PRs should adhere to the organization's standards.
 
    - Important for continuity
    - Makes code reviews easier
@@ -126,7 +126,7 @@ ignored.
       - rest_conventions.
       - doxygen_conventions.
 
-#. PRs should contain code of high-caliber.
+5. PRs should contain code of high-caliber.
 
    - NWChemEx strives to be an exemplar package
    - Easier to maintain good code
@@ -137,13 +137,13 @@ ignored.
 
 ### API Breaking Changes
 
-#. Breaking API should be a last resort.
+1. Breaking API should be a last resort.
 
    - Maintaining stable APIs leads to users and developers instilling trust
      in us.
    - Need to document what was tried to avoid the break.
 
-#. Need a plan to avoid breaking the APIs again.
+2. Need a plan to avoid breaking the APIs again.
 
    - Determine breakage points.
    - Update design documentation relying on old API.
@@ -152,7 +152,7 @@ ignored.
 
 ### Features
 
-#. Need to avoid the "Hit by a bus" scenario.
+1. Need to avoid the "Hit by a bus" scenario.
 
    - The NWChemEx code base needs to be maintainable by multiple developers.
    - Knowledge needs to be discoverable and shared.
@@ -162,7 +162,7 @@ ignored.
    - Developer documentation for technical aspects, avoids the costly exercise
      of reverse engineering how algorithms work.
 
-#. Features need to be tested.
+2. Features need to be tested.
 
    - As a scientific code we need to be reliable and reproducible.
    - NWChemEx is a big project, so it can be very difficult to understand
@@ -171,11 +171,11 @@ ignored.
 
 ### Patches
 
-#. Patches are often small and ready to go upon opening PR.
+1. Patches are often small and ready to go upon opening PR.
 
    - Don't require PR to be opened in advance.
 
-#. Not all feature considerations are applicable to patches.
+2. Not all feature considerations are applicable to patches.
 
    - Documentation usually not needed for bug fixes.
    - Need tests to ensure bug doesn't appear again.
@@ -201,11 +201,11 @@ We have written a PR template to streamline the process of opening PRs. The
 template is designed to have meaningful prompts that can be filled out quickly.
 The prompts ask the author to:
 
-#. specify what sort of PR this is (major, minor, or patch),
-#. describe what's in scope for the PR,
-#. describe what's not in scope for the PR,
-#. confirm that they have done documentation, etc., and
-#. (for drafts only) listing what still needs to be done.
+1. specify what sort of PR this is (major, minor, or patch),
+2. describe what's in scope for the PR,
+3. describe what's not in scope for the PR,
+4. confirm that they have done documentation, etc., and
+5. (for drafts only) listing what still needs to be done.
 
 Why these prompts? The first prompt is for categorizing the PR (and
 automating the resulting semantic versioning that needs to happen). The next
@@ -225,10 +225,10 @@ The template contains comments which explain the prompts in more detail.
 Once an author has decided to work on a feature or patch they should open a PR.
 This entails:
 
-#. Start a branch `b` for the PR.
-#. Initiate a draft PR from `b` to the target branch (usually master/main).
-#. Fill out the PR template GitHub prompts with.
-#. Continue to push changes to the branch (checking off tasks as appropriate).
+1. Start a branch `b` for the PR.
+2. Initiate a draft PR from `b` to the target branch (usually master/main).
+3. Fill out the PR template GitHub prompts with.
+4. Continue to push changes to the branch (checking off tasks as appropriate).
 
    - Generally speaking changes should clearly identify todos raised by the
      change, *e.g.*, if you add a function, but don't document it. Put
@@ -236,12 +236,12 @@ This entails:
    - This helps reviewers know what you've overlooked vs. what you just haven't
      gotten around to.
 
-#. Notify the reviewers when the author thinks that `b` is ready to merge
+5. Notify the reviewers when the author thinks that `b` is ready to merge
    by messaging `r2g` (or something similar) in the PR conversation.
-#. Respectfully address any reviewer concerns. Marking each one as resolved when
+6. Respectfully address any reviewer concerns. Marking each one as resolved when
    it has been addressed.
-#. If the PR has changed return to item 5.
-#. The last approving reviewer merges the PR after all CI workflows pass.
+7. If the PR has changed return to item 5.
+8. The last approving reviewer merges the PR after all CI workflows pass.
 
 > **Note:**
 > For PRs whose description requires more than a couple sentences. The author
@@ -259,27 +259,27 @@ This entails:
 
 Reviewers of a PR are expected to:
 
-#. Understand what the PR is supposed to accomplish.
-#. If necessary, the reviewers should help the author refine the PR contents.
+1. Understand what the PR is supposed to accomplish.
+2. If necessary, the reviewers should help the author refine the PR contents.
 
    - Should the PR (and corresponding issue) be split into multiple issues/PRs?
    - Did the author miss any obvious concerns?
 
-#. Keep an eye on the PR as it progresses. The frequency of "check-ins" should
+3. Keep an eye on the PR as it progresses. The frequency of "check-ins" should
    be inversely proportional to the author's familiarity with the process,
    *i.e.*, keep a closer eye on newer authors than seasoned veterans.
-#. Comment on the code when issues are spotted.
+4. Comment on the code when issues are spotted.
 
    - Is the code using existing infrastructure to the extent possible?
    - Is the code accruing technical debt?
    - Is the formatting consistent? (Don't worry about formatting which CI will
      fix)
 
-#. When the PR is marked as ready to go, complete a final pass through the code
+5. When the PR is marked as ready to go, complete a final pass through the code
    flagging any potential issues.
-#. If issues arise, work with the author to resolve them. Repeating the previous
+6. If issues arise, work with the author to resolve them. Repeating the previous
    steps as necessary.
-#. If you are the last reviewer to approve a PR then merge it (assuming all
+7. If you are the last reviewer to approve a PR then merge it (assuming all
    CI workflows have passed).
 
 ### Notes on PR Quality

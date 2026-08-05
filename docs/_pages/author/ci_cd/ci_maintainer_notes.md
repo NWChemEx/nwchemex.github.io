@@ -11,34 +11,32 @@ toc_sticky: true
 The purpose of this page is to document various aspects of NWX's CI.
 
 NWX has a lot of repositories. And more repositories will be added into NWX. To
-make the CI of NWX generic and re-useable, we've used `reuseable workflows
-<https://docs.github.com/en/actions/using-workflows/reusing-workflows>`__ and
-`composite actions
-<https://docs.github.com/en/actions/creating-actions/creating-a-composite-action>`__
-for designing our CI architecture. The goal of this design was to ensure
-maximum re-use of CI components across multiple repositories.
+make the CI of NWX generic and re-useable, we've used 
+[reuseable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+and [composite actions](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action)
+for designing our CI architecture. The goal of this design was to ensure maximum
+re-use of CI components across multiple repositories.
 
 Here are a few useful tutorials on workflows in GitHub:
 
 - [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)
-- `GitHub Actions Tutorial, From Zero to Hero in 90 minutes
-  <https://www.youtube.com/watch?v=TLB5MY9BBa4>`__
+- [GitHub Actions Tutorial, From Zero to Hero in 90 minutes](https://www.youtube.com/watch?v=TLB5MY9BBa4)
 
 Currently the following repositories in `NWChemEx` follow the methods
 outlined here:
 
-#. `.github` (This is our configuration repository)
-#. `ChemCache`
-#. `Chemist`
-#. `Integrals`
-#. `Mokup`
-#. `NWChemEx`
-#. `ParallelZone`
-#. `PluginPlay`
-#. `SimDE`
-#. `SCF`
-#. `TensorWrapper`
-#. `Utilities`
+1. `.github` (This is our configuration repository)
+1. `ChemCache`
+1. `Chemist`
+1. `Integrals`
+1. `Mokup`
+1. `NWChemEx`
+1. `ParallelZone`
+1. `PluginPlay`
+1. `SimDE`
+1. `SCF`
+1. `TensorWrapper`
+1. `Utilities`
 
 ## Common and Repo-Specific Workflows
 

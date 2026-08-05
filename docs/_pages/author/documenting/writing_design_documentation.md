@@ -74,12 +74,12 @@ As for the literal contents of a design document consider an outline like:
 
 3. Considerations
 
-  - When a stakeholder interacts with this component, feature, class, or
-    whatever, what should they expect?
-  - Ideally the considerations should be at the same granularity as the feature.
-    For example when discussing the repo structure of NWChemEx it doesn't make
-    sense to explicitly consider that we'll need to be able to build a
-    two-center integral between f-orbitals.
+   - When a stakeholder interacts with this component, feature, class, or
+     whatever, what should they expect?
+   - Ideally the considerations should be at the same granularity as the feature.
+     For example when discussing the repo structure of NWChemEx it doesn't make
+     sense to explicitly consider that we'll need to be able to build a
+     two-center integral between f-orbitals.
 
 4. Existing Options
 

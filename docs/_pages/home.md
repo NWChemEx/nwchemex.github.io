@@ -37,9 +37,9 @@ gallery2:
 This website is under heavy construction at the moment.
 {: .notice--warning}
 
-New to NWChemEx? Check out our [about page](/community/about/) for a quick overview of the
-project and what we are trying to accomplish. Otherwise you can browse
-information by use case:
+New to NWChemEx? Check out our [about page](/community/about/) for a quick 
+overview of the project and what we are trying to accomplish. Otherwise you can
+browse information by use case:
 
 - **Community members** run calculations.
 - **Developers** develop modular software compatible with NWChemEx.
@@ -49,5 +49,3 @@ information by use case:
 {% include gallery id="gallery1" %}
 
 {% include gallery id="gallery2" %}
-
-- [Bibliography](bibliography/bibliography.md)

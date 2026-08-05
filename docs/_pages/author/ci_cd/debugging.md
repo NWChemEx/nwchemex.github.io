@@ -10,7 +10,7 @@ toc_sticky: true
 
 > **Note:**
 > When you try to Google "how to debug Github Actions locally" you will find
-> a tool called `Act <https://github.com/nektos/act>`__. In our experience,
+> a tool called [Act](https://github.com/nektos/act) In our experience,
 > we seem to always be in th 10% of edge cases that Act cannot faithfully
 > reproduce locally, i.e., feel free to try it, but it probably won't work.
 
