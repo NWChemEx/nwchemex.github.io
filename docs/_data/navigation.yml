@@ -1,4 +1,6 @@
 main:
+  - title: "News"
+    url: "/news/"
   - title: "Plugins"
     url: "/plugins/"
   - title: "Community Members"

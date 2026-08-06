@@ -106,12 +106,12 @@ alphabetical order) along with brief summaries.
 
 ### Boost.Python
 
-- GitHub: https://github.com/boostorg/python
+- GitHub: <https://github.com/boostorg/python>
 
   - 28 watchers
   - 396 stars
 
-- Docs: http://boostorg.github.io/python/doc/html/index.html
+- Docs: <http://boostorg.github.io/python/doc/html/index.html>
 
 Boost.Python was one of the "OG" binding libraries to rely on template meta-
 programming to dramatically simplify the process of binding C++ code. Its
@@ -134,20 +134,20 @@ Cons:
 
 ### C Foreign Function Interface (CFFI)
 
-- Docs: https://cffi.readthedocs.io/en/latest/
+- Docs: <https://cffi.readthedocs.io/en/latest/>
 
 TODO: Look at CFFI
 
 ### Cppyy
 
-- GitHub: https://github.com/wlav/cppyy
+- GitHub: <https://github.com/wlav/cppyy>
 
   - 9 watchers
   - 255 stars
 
-- Docs: https://cppyy.readthedocs.io/en/latest/index.html
+- Docs: <https://cppyy.readthedocs.io/en/latest/index.html>
 
-Cppyy `cppyy16` piggybacks off of the LLVM suite of tools to fully
+Cppyy piggybacks off of the LLVM suite of tools to fully
 automate the creation of dynamic Python bindings. In practice, the automatic
 bindings are created using Cppyy's own one-to-one mapping between C++ and
 Python. It is worth noting, that because of pb_diff_lang, this one-to-one
@@ -205,26 +205,26 @@ Cons:
 
 ### ctypes
 
-- Docs: https://docs.python.org/3.8/library/ctypes.html
+- Docs: <https://docs.python.org/3.8/library/ctypes.html>
 
 TODO: Look ctypes over.
 
 ### Cython
 
-- Docs: https://cython.org/
+- Docs: <https://cython.org/>
 
 TODO: Look Cython over
 
 ### nanobind
 
-- GitHub: https://github.com/wjakob/nanobind
+- GitHub: <https://github.com/wjakob/nanobind>
 
   - 27 watchers
   - 1.4K stars
 
-- Docs: https://nanobind.readthedocs.io/en/latest/
+- Docs: <https://nanobind.readthedocs.io/en/latest/>
 
-nanobind `nanobind` is from the original author of pybind11 and was
+nanobind is from the original author of pybind11 and was
 started because he wanted to create a more streamlined, more performant python
 binding library, while still supporting pybind11. The API and usage of
 nanobind is largely the same as pybind11
@@ -244,14 +244,14 @@ Cons:
 
 ### pybind11
 
-- GitHub: https://github.com/pybind/pybind11
+- GitHub: <https://github.com/pybind/pybind11>
 
   - 244 watchers
   - 12.6K stars
 
-- Docs: https://pybind11.readthedocs.io/en/stable/
+- Docs: <https://pybind11.readthedocs.io/en/stable/>
 
-pybind11 `pybind11` has largely replaced Boost.Python as the predominant
+pybind11 has largely replaced Boost.Python as the predominant
 mechanism for exposing C/C++ code to Python. The API of pybind11 is modeled
 after that of Boost.Python, but is significantly simpler on account of pybind11
 requiring minimum C++11 (Boost.Python is based on C++03). More specifically,
@@ -275,25 +275,25 @@ Cons:
 
 ### PyBindGen
 
-- Docs: https://pybindgen.readthedocs.io/en/latest/
+- Docs: <https://pybindgen.readthedocs.io/en/latest/>
 
 TODO: Analyze
 
 ### Shiboken
 
-- Docs: https://doc.qt.io/qtforpython-6/shiboken6/index.html
+- Docs: <https://doc.qt.io/qtforpython-6/shiboken6/index.html>
 
 TODO: Analyze.
 
 ### SIP
 
-- Docs: https://www.riverbankcomputing.com/static/Docs/sip/introduction.html
+- Docs: <https://www.riverbankcomputing.com/static/Docs/sip/introduction.html>
 
 TODO: Take a better look at SIP
 
 ### SWIG
 
-- Website: https://swig.org/
+- Website: <https://swig.org/>
 
 TODO: Look into SWIG.
 

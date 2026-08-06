@@ -1,7 +1,7 @@
 ---
 title: "Using IDEs to develop NWChemEx"
 layout: single
-permalink: /developer/coding/ides/
+permalink: /developer/ides/
 toc: true
 toc_sticky: true
 ---
@@ -47,4 +47,4 @@ The following sections focus on how to set-up various IDEs for developing NWX.
 All of these tutorials assume that you have a directory set-up akin to that
 suggested in the development_preliminaries section.
 
-- [Vscode](vscode/index.md)
+- [VSCode](vscode/index.md)

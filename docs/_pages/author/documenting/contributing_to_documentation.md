@@ -39,11 +39,10 @@ Note: the developer documentation of NWChemEx resides in the .github repo.
 
 ## How to Generate a Local Copy of the Documentation
 
-NWChemEx uses `Sphinx - a Python documentation generator
-<https://www.sphinx-doc.org/en/master/index.html>`_ to transform the
-source files (.rst, .md. etc) into documentation files in various formats
-(.html, .pdf, etc). One can see the content of the file `requirements.txt`
-with the linux command `vi`:
+NWChemEx uses [Sphinx](https://www.sphinx-doc.org/en/master/index.html) - a 
+Python documentation generator to transform the source files (.rst, .md. etc) 
+into documentation files in various formats (.html, .pdf, etc). One can see the
+content of the file `requirements.txt` with the linux command `vi`:
 
 ```console
 docutils<=0.19

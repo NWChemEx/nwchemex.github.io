@@ -21,3 +21,4 @@ owned and managed by the NWChemEx GitHub organization.
 # Maintaining the Stack
 
 - [Continuous Deployment](ci_cd/index.md)
+- [Testing](testing/index.md)

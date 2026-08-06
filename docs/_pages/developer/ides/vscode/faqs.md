@@ -1,7 +1,7 @@
 ---
 title: "FAQs"
 layout: single
-permalink: /developer/coding/ides/vscode/faqs/
+permalink: /developer/ides/vscode/faqs/
 toc: true
 toc_sticky: true
 ---

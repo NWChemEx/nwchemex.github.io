@@ -13,7 +13,8 @@ the website.
 
 If this is your first time contributing you will need to update the website
 author list. The list lives in `_data/authors.yml`. If you are already on the
-list skip this step. It is recommended you simply copy/paste one of the existing author profiles and change it appropriately. The layout is roughly:
+list skip this step. It is recommended you simply copy/paste one of the existing
+author profiles and change it appropriately. The layout is roughly:
 
 ```yaml
 # Content in <> are placeholders which you should fill in
@@ -38,7 +39,9 @@ them.
 
 # Creating a Post/Tutorial
 
-For the most part the considerations for creating a post (news, update, and shout-outs) and a tutorial are similar so we will discuss them together created following the same steps. They primarily differ in:
+For the most part the considerations for creating a post (news, update, and 
+shout-outs) and a tutorial are similar so we will discuss them together created
+following the same steps. They primarily differ in:
 
 1. where the content lives (posts live in `_posts` and tutorials in
    `_tutorials`),
@@ -48,7 +51,8 @@ For the most part the considerations for creating a post (news, update, and shou
 ## Front Matter
 
 Once you know where to put the file, and what to name it, we have to start
-writing it. All posts and tutorials should minimally contain the following front matter:
+writing it. All posts and tutorials should minimally contain the following front
+matter:
 
 ```markdown
 ---

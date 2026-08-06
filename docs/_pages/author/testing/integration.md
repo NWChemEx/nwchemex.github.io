@@ -17,7 +17,7 @@ these libraries are intended to ensure basic functionality and correctness,
 which can usually be accomplished with simple test data that allow the unit
 tests to run quickly.
 
-![A simplified diagram of the NWChemEx dependency structure. Note that plugins depending on SimDE are parallel to one another, and are integrated together within NWChemEx. Arrows point from a dependency to the dependent library.](assets/DependencyChart.png)
+![A simplified diagram of the NWChemEx dependency structure.](assets/DependencyChart.png)
 
 With that said, the initial development and testing of the SCF becomes very
 awkward when one is unable to easily acquire real integrals for real molecular
@@ -26,11 +26,11 @@ effects on the SCF code, which we would like to detect before merging. For these
 (and other) reasons, it can be useful to implement integration tests to ensure
 the continued interoperability of the isolated components of the NWX stack.
 Because the tests are built on top of the plugins, it is simple to include
-NWChemEx itself as a dependency of the test (see `fig_integration_chart`).
-This way, changes at the plugin level can be screened to guarantee that they
-don't break interoperability with the others.
+NWChemEx itself as a dependency of the test. This way, changes at the plugin
+level can be screened to guarantee that they don't break interoperability with
+the others.
 
-![A diagram illustrating the relationship between the integration tests, the library they test, and the top-level NWChemEx library. Arrows point from a dependency to the dependent library.](assets/DependencyChartExtended.png)
+![A diagram illustrating the relationship between the integration tests, the library they test, and the top-level NWChemEx library.](assets/DependencyChartExtended.png)
 
 ## CMake for Integration Testing
 

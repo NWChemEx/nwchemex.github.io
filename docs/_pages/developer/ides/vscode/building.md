@@ -1,7 +1,7 @@
 ---
 title: "Building NWX with VSCode"
 layout: single
-permalink: /developer/coding/ides/vscode/building/
+permalink: /developer/ides/vscode/building/
 toc: true
 toc_sticky: true
 ---
