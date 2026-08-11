@@ -74,3 +74,40 @@ need to produce portable wheels rather than use the ambient dev environment.
 
 A `nightly.yaml` workflow (scheduled, not tied to PRs or merges) also exists
 in each repo but is not covered here.
+
+## Dependency Resolution: Two Independent Paths
+
+A repo's sibling dependencies are resolved two different ways, on two
+different axes, and it's easy to assume the whole graph is version-pinned
+when it isn't -- worth stating plainly:
+
+- **Python side -- pinned floors from PyPI.** Each repo's `pyproject.toml`
+  lists its siblings as `>=` floors (e.g. `nwchemex-simde>=0.0.77`),
+  resolved against whatever's actually published on PyPI at install time.
+  `tag.yaml` bumps a patch version on every merge, so a floor rather than an
+  exact pin avoids needing a bump PR in every consumer on every release.
+- **C++ side -- a rolling `master` build, not version-pinned.**
+  `nwxcmake/cmake/dependencies/<dep>.cmake` fetches each of the 11 NWChemEx
+  C++ libraries (`chemcache`, `chemist`, `integrals`, `nux`, `nwchemex`,
+  `parallelzone`, `pluginplay`, `simde`, `tensorwrapper`, `utilities`, `wtf`)
+  via `FetchContent` at `GIT_TAG master` -- always the latest commit, not a
+  release tag. This is deliberate: none of these 11 have a `find_package`
+  fallback (unlike third-party dependencies such as `boost`, `gauxc`,
+  `gau2grid`, and `libxc`, which do), so they resolve purely by `GIT_TAG`,
+  including under `SKBUILD` (i.e. even a `pip install` of a compiled
+  package's sdist pulls its C++ dependencies this way).
+
+**These two paths are independent of each other.** A package's C++ sources
+come from `master` at build time, while its Python floor resolves whatever
+wheel is currently published -- so rebuilding the same sdist at a later date
+can compile against newer C++ than the version implied by the Python floor
+that originally pulled it in. This is the accepted trade for keeping the
+C++ side a rolling integration build rather than version-pinned; don't
+assume pinning one side pins the other.
+
+One consequence worth knowing: `nwx_set_version`'s `get_version_from_git`
+reports the latest *tag* reachable from the current checkout, which for a
+branch checkout (i.e. what `FetchContent` actually gets at `master`) is the
+last tagged commit, not necessarily the commit actually checked out. A
+`FetchContent`'d dependency's reported CMake version is therefore
+approximate, not exact -- a known, accepted limitation, not a bug to chase.
