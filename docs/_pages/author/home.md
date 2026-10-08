@@ -11,6 +11,7 @@ owned and managed by the NWChemEx GitHub organization.
 
 - [Conventions](conventions/index.md)
 - [Documenting](documenting/index.md)
+- [Idioms](idioms/index.md)
 
 # Information on Architecture and Design
 
