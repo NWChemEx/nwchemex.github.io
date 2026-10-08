@@ -20,7 +20,7 @@ by the NWChemEx ecosystem.
      patterns and conventions, i.e., there will be a lot of repetition across
      repositories and we want to obey the DRY principle as much as possible.
 
-2. In general, repositories will contains a mix of C++ and Python source.
+2. In general, repositories will contain a mix of C++ and Python source.
 
    - C++ will be compiled into a library that can be linked directly to from
      other C++ code.
@@ -48,6 +48,7 @@ by the NWChemEx ecosystem.
    plugin repo depend on the existing state of the NWChemEx package, even though
    the plugin may be included in that package. This creates a dependency cycle
    that must be broken in some way.
+   
 5. It must be possible to add plugins at runtime to the result of the NWChemEx
    package without needing to rebuild it.
 
