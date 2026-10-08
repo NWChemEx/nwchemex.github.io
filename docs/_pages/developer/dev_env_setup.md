@@ -29,19 +29,32 @@ nwx_workspace/
 `-- toolchain.cmake
 ```
 
-where the `toolchain.cmake` file is explained below and is only needed if you
-want additional control over the build system. 
+where the `toolchain.cmake` file is explained in detail in the next subsection. 
 
 ## Toolchain file
 
-The Python build is a thin wrapper over a CMake build. To pass options to the
-underlying CMake build it is helpful to put the options in a toolchain file.
-By convention this is a file named `toolchain.cmake` and its contents are
+> **Note**: This section is only relevant for developing in a repository that
+> contains a CMakeLists.txt. This section is relevant even if you only plan to
+> work on the Python pieces of the repo.
+
+Fundamentally, most of the repos in the NWChemEx ecosystem leverage CMake as the
+build system. In these cases, the Python build is a thin wrapper over a CMake 
+build. Thus, regardless of whether you are building the repo with CMake or 
+Python, controlling the build requires passing options to CMake. To make your
+life easier, it helps to put all of the options you want to pass into a single
+file. By convention this is a file named `toolchain.cmake` and its contents are
 simply a series of CMake `set` commands like:
 
 ```cmake
 set(CMAKE_CXX_COMPILER /path/to/your/C++/compiler)
 # This is a comment, more set commands can follow this one.
+```
+
+If you plan to build the development repo with CMake directly, you pass the full
+path of the toolchain file to CMake like:
+
+```
+cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/toolchain.cmake
 ```
 
 # Creating an editable install
